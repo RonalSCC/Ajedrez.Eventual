@@ -75,11 +75,14 @@ public class CommandHandlerTestBase
     /// <param name="expectedValue"></param>
     /// <param name="options"></param>
     /// <typeparam name="TAggregateRoot"></typeparam>
-    public void And<TAggregateRoot>(Func<TAggregateRoot, object> contextFunc, object expectedValue,
-        Func<EquivalencyOptions<object>, EquivalencyOptions<object>>? options = null)
+    public void And<TAggregateRoot>(
+        Func<TAggregateRoot, object> contextFunc, 
+        object expectedValue,
+        Func<EquivalencyOptions<object>, EquivalencyOptions<object>>? options = null,
+        bool onlyContains = false)
         where TAggregateRoot : AggregateRoot, new()
     {
-        And<TAggregateRoot, object>(contextFunc, expectedValue, options);
+        And<TAggregateRoot, object>(contextFunc, expectedValue, options, onlyContains);
     }
 
     /// <summary>
@@ -90,13 +93,35 @@ public class CommandHandlerTestBase
     /// <param name="options"></param>
     /// <typeparam name="TAggregateRoot"></typeparam>
     /// <typeparam name="TResult"></typeparam>
-    public void And<TAggregateRoot, TResult>(Func<TAggregateRoot, TResult> contextFunc, TResult expectedValue,
-        Func<EquivalencyOptions<TResult>, EquivalencyOptions<TResult>>? options = null)
+    public void And<TAggregateRoot, TResult>(
+        Func<TAggregateRoot, TResult> contextFunc, 
+        TResult expectedValue,
+        Func<EquivalencyOptions<TResult>, EquivalencyOptions<TResult>>? options = null,
+        bool onlyContains = false)
         where TAggregateRoot : AggregateRoot, new()
     {
         var entidad = eventStore.GetAggregateRoot<TAggregateRoot>(_aggregateId);
         ArgumentNullException.ThrowIfNull(entidad);
         var opciones = options ?? (opt => opt);
-        contextFunc(entidad).Should().BeEquivalentTo(expectedValue, opciones);
+        var actual =  contextFunc(entidad);
+        
+        if (actual is IEnumerable<object> listaActual 
+            && expectedValue is IEnumerable<object> listaEsperada
+            && onlyContains)
+        {
+            AssertListContainsValue(listaActual, listaEsperada);
+            return;
+        }
+        
+        actual.Should().BeEquivalentTo(expectedValue, opciones);
+    }
+
+    private void AssertListContainsValue(IEnumerable<object> listaActual, IEnumerable<object> listaEsperada)
+    {
+        
+        foreach (var expectedItem in listaEsperada)
+        {
+            listaActual.Should().Contain(expectedItem);
+        }
     }
 }

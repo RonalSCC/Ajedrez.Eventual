@@ -11,6 +11,7 @@ public class AjedrezGame : AggregateRoot
     {
         Id = @event.Id;
         Casillas.Add(new Casilla("A", 1,  "Blanca"));
+        Casillas.Add(new Casilla("A", 8,  "Negra"));
     }
 }
 

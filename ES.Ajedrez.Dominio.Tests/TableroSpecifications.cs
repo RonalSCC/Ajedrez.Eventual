@@ -2,6 +2,7 @@ using ES.Ajedrez.Dominio.Aggregate;
 using ES.Ajedrez.Dominio.Comandos;
 using ES.Ajedrez.Dominio.Comandos;
 using ES.Ajedrez.Dominio.Eventos;
+using FluentAssertions;
 
 namespace ES.Ajedrez.Dominio.Tests;
 
@@ -20,7 +21,7 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         {
             new Casilla("A", 1, "Blanca"),
         };
-        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
+        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas, onlyContains: true);
     }
 
     [Fact]
@@ -35,6 +36,5 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
             new Casilla("A", 8, "Negra")
         };
         And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
-        
     }
 }
