@@ -1,3 +1,5 @@
+using ES.Ajedrez.Dominio.Eventos;
+
 namespace ES.Ajedrez.Dominio.Comandos;
 
 public record CrearJuego();
@@ -5,6 +7,9 @@ public class CrearJuegoHandlerAsync(IEventStore eventStore) : ICommandHandlerAsy
 {
     public Task<Guid> HandleAsync(CrearJuego command, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        var idJuego = Guid.CreateVersion7();
+        var eventoJuegoCreado = new EventosAjedrez.JuegoCreado(idJuego);
+        eventStore.AppendEvent(idJuego, eventoJuegoCreado);
+        return Task.FromResult(idJuego);
     }
 }

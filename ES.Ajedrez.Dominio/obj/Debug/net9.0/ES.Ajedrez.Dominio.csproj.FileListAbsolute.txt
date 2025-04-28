@@ -9,3 +9,4 @@ C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\E
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\refint\ES.Ajedrez.Dominio.dll
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.pdb
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ref\ES.Ajedrez.Dominio.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.sourcelink.json

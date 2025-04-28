@@ -101,3 +101,4 @@ C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio.Tests\obj\Debug\ne
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio.Tests\obj\Debug\net9.0\ES.Ajedrez.Dominio.Tests.pdb
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio.Tests\obj\Debug\net9.0\ES.Ajedrez.Dominio.Tests.genruntimeconfig.cache
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio.Tests\obj\Debug\net9.0\ref\ES.Ajedrez.Dominio.Tests.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio.Tests\obj\Debug\net9.0\ES.Ajedrez.Dominio.Tests.sourcelink.json

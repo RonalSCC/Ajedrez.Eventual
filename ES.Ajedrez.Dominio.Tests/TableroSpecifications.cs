@@ -1,3 +1,4 @@
+using ES.Ajedrez.Dominio.Aggregate;
 using ES.Ajedrez.Dominio.Comandos;
 using ES.Ajedrez.Dominio.Comandos;
 using ES.Ajedrez.Dominio.Eventos;
@@ -11,8 +12,9 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
     [Fact]
     public async Task Debe_SerLaCasillaDelTableroBlancaEnLaPosicionA1()
     {
-        var idJuego = await WhenAsync(new CrearJuego());
+        _aggregateId = await WhenAsync(new CrearJuego());
         
-        Then(new EventosAjedrez.JuegoCreado(idJuego));
+        Then(new EventosAjedrez.JuegoCreado(_aggregateId));
+        And<AjedrezGame>(ajedrez => ajedrez.Id, _aggregateId);
     }
 }
