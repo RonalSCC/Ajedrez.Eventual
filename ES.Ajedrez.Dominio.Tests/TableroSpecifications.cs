@@ -55,4 +55,16 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         };
         And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas, onlyContains:true);
     }
+
+    [Fact]
+    public async Task Debe_ElTableroTenerUnPeonBlancoEnLaCasillaA2()
+    {
+        _aggregateId = await WhenAsync(new CrearJuego());
+        
+        Then(new EventosAjedrez.JuegoCreado(_aggregateId));
+        var casilla = new Casilla(Columnas.A, 2, ColoresCasilla.Blanco);
+        var peon = new Pieza(casilla);
+        And<AjedrezGame>(ajedrez => ajedrez.Piezas, peon);
+
+    }
 }

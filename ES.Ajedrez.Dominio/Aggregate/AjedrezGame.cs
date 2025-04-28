@@ -5,7 +5,8 @@ namespace ES.Ajedrez.Dominio.Aggregate;
 public class AjedrezGame : AggregateRoot
 {
     public Guid Id { get; private set; }
-    public List<Casilla> Casillas = new();
+    public List<Pieza> Piezas { get; private set; } = [];
+    public List<Casilla> Casillas { get; private set; } = [];
 
     public void Apply(EventosAjedrez.JuegoCreado @event)
     {
@@ -51,3 +52,5 @@ public enum ColoresCasilla
 }
 
 public record Casilla(Columnas Columna, int Fila, ColoresCasilla Color);
+
+public record Pieza(Casilla Casilla);

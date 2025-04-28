@@ -26,5 +26,5 @@ En cada fila, los colores se alternan, y también cambian de fila a fila.
 - [x] - Debe ser la casilla del tablero blanca en la posición A1 
 - [x] - Debe ser la casilla del tablero blanca en la posición A1 y negra en la posición A8
 - [x] - Debe el tablero tener contenidas algunas casillas especificas.
-- [ ] - Debe el tablero tener un peón blanco en la casilla A1
-- [ ] - Debe el tablero tener un peón negro en la casilla A1
+- [] - Debe el tablero tener un peón blanco en la casilla A2
+- [ ] - Debe el tablero tener un peón negro en la casilla A7
