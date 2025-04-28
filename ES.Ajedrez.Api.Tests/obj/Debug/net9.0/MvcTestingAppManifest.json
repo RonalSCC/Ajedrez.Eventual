@@ -1,0 +1,5 @@
+{
+  "ES.Ajedrez.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Devops\\Katas\\ES.Ajedrez\\TemplateContent\\ES.Ajedrez.API",
+  "ES.Ajedrez.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Devops\\Katas\\ES.Ajedrez\\TemplateContent\\ES.Ajedrez.Dominio",
+  "ES.Ajedrez.EventStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Devops\\Katas\\ES.Ajedrez\\TemplateContent\\ES.Ajedrez.EventStore"
+}

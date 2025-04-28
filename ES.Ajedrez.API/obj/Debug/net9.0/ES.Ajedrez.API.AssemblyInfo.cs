@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ES.Comandos.API")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ES.Ajedrez.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ES.Comandos.API")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ES.Comandos.API")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4996bd08a941041569f07a3fdd5d8f727f35b5f")]
+[assembly: System.Reflection.AssemblyProductAttribute("ES.Ajedrez.API")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ES.Ajedrez.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

@@ -33,25 +33,10 @@ if (app.Environment.IsDevelopment())
 // app.UseHttpsRedirection();
 app.UseHealthChecks("/health");
 
-app.MapPost("/product", async (CreateProduct command, ICommandRouter router) => { await router.InvokeAsync(command); });
 
+
+app.MapPost("/IniciarJuego", () => Results.Problem());
 app.Run();
+public record IniciarJuegoRequest();
 
-public record CreateProduct(string Name, string Description, decimal Price);
 
-public record ProductCreated(string Name, string Description, decimal Price);
-
-public class CreateProductHandler(IEventStore eventStore) : ICommandHandler<CreateProduct>
-{
-    public void Handle(CreateProduct command)
-    {
-        var productId = Guid.NewGuid();
-        var @event = new ProductCreated(
-            command.Name,
-            command.Description,
-            command.Price
-        );
-
-        eventStore.AppendEvent(productId, @event);
-    }
-}

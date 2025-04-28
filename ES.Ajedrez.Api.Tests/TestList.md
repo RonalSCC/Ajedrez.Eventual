@@ -1,0 +1,3 @@
+- [x] - Si el endpoint devuelve false y el juego no se inició debe retornar 400 
+- [ ] - Si el endpoint falla debe retornar 500
+- [ ] - Si el endpoint devuelve true y el juego se inició debe retornar 200

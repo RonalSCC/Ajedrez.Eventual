@@ -72,8 +72,9 @@ public static class Extensiones
         builder.UseWolverine(options =>
             {
                 options.Discovery.IncludeAssembly(typeof(IEventStore).Assembly);
-                options.Services.AgregarConfiguracionMarten(martenConnectionString,
-                    isDevelopment).IntegrateWithWolverine();
+                options.Services
+                    .AgregarConfiguracionMarten(martenConnectionString,isDevelopment)
+                    .IntegrateWithWolverine();
                 options.Policies.AutoApplyTransactions();
                 options.Durability.Mode = DurabilityMode.MediatorOnly;
             }

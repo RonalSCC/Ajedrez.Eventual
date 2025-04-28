@@ -13,3 +13,4 @@ C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\refint\ES.Ajedrez.EventStore.dll
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.pdb
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ref\ES.Ajedrez.EventStore.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.sourcelink.json

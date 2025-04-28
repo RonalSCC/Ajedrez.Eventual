@@ -221,3 +221,4 @@ C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.API\obj\Debug\net9.0\refin
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.API\obj\Debug\net9.0\ES.Ajedrez.API.pdb
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.API\obj\Debug\net9.0\ES.Ajedrez.API.genruntimeconfig.cache
 C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.API\obj\Debug\net9.0\ref\ES.Ajedrez.API.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.API\obj\Debug\net9.0\ES.Ajedrez.API.sourcelink.json
