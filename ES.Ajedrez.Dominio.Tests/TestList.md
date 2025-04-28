@@ -24,7 +24,7 @@ En cada fila, los colores se alternan, y también cambian de fila a fila.
 
 
 - [x] - Debe ser la casilla del tablero blanca en la posición A1 
-- [] - Debe ser la casilla del tablero blanca en la posición A1 y negra en la posición A8
+- [x] - Debe ser la casilla del tablero blanca en la posición A1 y negra en la posición A8
 - [] - Debe ser la casilla del tablero negra en la posición H1
 - [] - Debe ser la casilla del tablero negra en la posición H1 y blanca en la posición H8
 - [] - Debe ser la casilla del tablero blanca en la posición 4D y negra en la posición 7G.  

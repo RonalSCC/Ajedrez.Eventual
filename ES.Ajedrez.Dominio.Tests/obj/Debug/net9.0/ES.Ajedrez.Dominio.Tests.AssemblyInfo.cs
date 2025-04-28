@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ES.Ajedrez.Dominio.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83af96b8740ba5c529f34af72a8a89c221b62d9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f987c5befe61504e12aef815f740713313d98a23")]
 [assembly: System.Reflection.AssemblyProductAttribute("ES.Ajedrez.Dominio.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ES.Ajedrez.Dominio.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
