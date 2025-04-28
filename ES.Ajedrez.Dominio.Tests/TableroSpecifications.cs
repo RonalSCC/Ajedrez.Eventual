@@ -23,4 +23,18 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
     }
 
+    [Fact]
+    public async Task Debe_SerLaCasillaDeTableroBlancaEnlaPosicionA1YNegraEnLaPosicionA8()
+    {
+        _aggregateId = await WhenAsync(new CrearJuego());
+        
+        Then(new EventosAjedrez.JuegoCreado(_aggregateId));
+        var casillasEsperadas = new List<Casilla>()
+        {
+            new Casilla("A", 1, "Blanca"),
+            new Casilla("A", 8, "Negra")
+        };
+        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
+        
+    }
 }
