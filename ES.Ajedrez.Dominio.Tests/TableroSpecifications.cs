@@ -39,7 +39,7 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
     }
 
     [Fact]
-    public async Task Debe_SerLaCasillaDelTableroNegraEnLaPosicionH1YBlancaEnLaPosicionH8()
+    public async Task Debe_ElTableroTenerContenidasLasCasillas()
     {
         _aggregateId = await WhenAsync(new CrearJuego());
         
@@ -49,7 +49,9 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
             new(Columnas.A, 1, ColoresCasilla.Blanco),
             new(Columnas.A, 8, ColoresCasilla.Negro),
             new(Columnas.H, 1, ColoresCasilla.Negro),
-            new(Columnas.H, 8, ColoresCasilla.Blanco)
+            new(Columnas.H, 8, ColoresCasilla.Blanco),
+            new(Columnas.D, 4, ColoresCasilla.Blanco),
+            new(Columnas.G, 6, ColoresCasilla.Negro),
         };
         And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas, onlyContains:true);
     }
