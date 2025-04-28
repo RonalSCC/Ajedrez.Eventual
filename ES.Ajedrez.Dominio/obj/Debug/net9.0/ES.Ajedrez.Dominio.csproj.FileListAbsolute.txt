@@ -1,0 +1,11 @@
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\bin\Debug\net9.0\ES.Ajedrez.Dominio.deps.json
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\bin\Debug\net9.0\ES.Ajedrez.Dominio.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\bin\Debug\net9.0\ES.Ajedrez.Dominio.pdb
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.AssemblyInfoInputs.cache
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.AssemblyInfo.cs
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.csproj.CoreCompileInputs.cache
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\refint\ES.Ajedrez.Dominio.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ES.Ajedrez.Dominio.pdb
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.Dominio\obj\Debug\net9.0\ref\ES.Ajedrez.Dominio.dll

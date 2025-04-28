@@ -1,0 +1,15 @@
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\bin\Debug\net9.0\ES.Ajedrez.EventStore.deps.json
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\bin\Debug\net9.0\ES.Ajedrez.EventStore.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\bin\Debug\net9.0\ES.Ajedrez.EventStore.pdb
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\bin\Debug\net9.0\ES.Ajedrez.Dominio.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\bin\Debug\net9.0\ES.Ajedrez.Dominio.pdb
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.csproj.AssemblyReference.cache
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.AssemblyInfoInputs.cache
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.AssemblyInfo.cs
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.csproj.CoreCompileInputs.cache
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedr.7054F652.Up2Date
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\refint\ES.Ajedrez.EventStore.dll
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ES.Ajedrez.EventStore.pdb
+C:\Devops\Katas\ES.Ajedrez\TemplateContent\ES.Ajedrez.EventStore\obj\Debug\net9.0\ref\ES.Ajedrez.EventStore.dll

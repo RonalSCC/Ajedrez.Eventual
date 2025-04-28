@@ -1,0 +1,15 @@
+services:
+  es.ajedrezdatabase:
+    image: postgres:latest    
+    volumes:
+      - ES.AjedrezDb:/var/lib/postgresql/data
+  es.ajedrezapi:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: ES.Ajedrez.API/Dockerfile
+  es.ajedrez-aspire-dashboard:
+    image: mcr.microsoft.com/dotnet/aspire-dashboard
+    
+volumes:
+  ES.AjedrezDb:

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "b6Dd3SDVW4+ErAXb2w7B9zNu+xVV+zxHIyUft59wnHo=",
+  "Source": "ES.Ajedrez.API",
+  "BasePath": "_content/ES.Ajedrez.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

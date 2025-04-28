@@ -1,0 +1,30 @@
+services:
+  es.ajedrezdatabase:
+    container_name: es.ajedrez_database
+    restart: always
+    environment:
+      POSTGRES_USER: ES.AjedrezUser
+      POSTGRES_PASSWORD: ES.AjedrezPassword
+      POSTGRES_DB: es.ajedrezdb
+    ports:
+      - "5432:5432"
+  es.ajedrezapi:
+    container_name: es.ajedrez_api
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - es.ajedrezdatabase
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__MartenEventStore=Host=es.ajedrezdatabase;Port=5432;Database=es.ajedrezdb;Username=ES.AjedrezUser;Password=ES.AjedrezPassword
+      - OpenTelemetryEndpoint=http://es.ajedrez-aspire-dashboard:18889
+  es.ajedrez-aspire-dashboard:
+    container_name: es.ajedrez_aspire_dashboard
+    ports:
+      - "18888:18888"
+      - "4317:18889"
+    environment:
+      - ASPIRE_DASHBOARD_UNSECURED_ALLOW_ANONYMOUS=true
+    restart: unless-stopped
