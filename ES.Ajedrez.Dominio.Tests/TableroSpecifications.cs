@@ -19,7 +19,7 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         And<AjedrezGame>(ajedrez => ajedrez.Id, _aggregateId);
         var casillasEsperadas = new List<Casilla>()
         {
-            new("A", 1, "Blanca"),
+            new(Columnas.A, 1, ColoresCasilla.Blanco),
         };
         And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas, onlyContains: true);
     }
@@ -32,10 +32,10 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         Then(new EventosAjedrez.JuegoCreado(_aggregateId));
         var casillasEsperadas = new List<Casilla>()
         {
-            new("A", 1, "Blanca"),
-            new("A", 8, "Negra")
+            new(Columnas.A, 1, ColoresCasilla.Blanco),
+            new(Columnas.A, 8, ColoresCasilla.Negro)
         };
-        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
+        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas, onlyContains:true);
     }
 
     [Fact]
@@ -46,11 +46,11 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         Then(new EventosAjedrez.JuegoCreado(_aggregateId));
         var casillasEsperadas = new List<Casilla>()
         {
-            new("A", 1, "Blanca"),
-            new("A", 8, "Negra"),
-            new("H", 1, "Negra"),
-            new("H", 8, "Blanca")
+            new(Columnas.A, 1, ColoresCasilla.Blanco),
+            new(Columnas.A, 8, ColoresCasilla.Negro),
+            new(Columnas.H, 1, ColoresCasilla.Negro),
+            new(Columnas.H, 8, ColoresCasilla.Blanco)
         };
-        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
+        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas, onlyContains:true);
     }
 }
