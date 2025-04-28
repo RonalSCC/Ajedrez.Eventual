@@ -118,10 +118,7 @@ public class CommandHandlerTestBase
 
     private void AssertListContainsValue(IEnumerable<object> listaActual, IEnumerable<object> listaEsperada)
     {
-        
         foreach (var expectedItem in listaEsperada)
-        {
             listaActual.Should().Contain(expectedItem);
-        }
     }
 }
