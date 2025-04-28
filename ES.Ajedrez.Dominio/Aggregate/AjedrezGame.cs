@@ -17,7 +17,7 @@ public class AjedrezGame : AggregateRoot
     {
         for (int posicionFila = 1; posicionFila <= 8; posicionFila++)
         {
-            ColoresCasilla colorActual = posicionFila % 2 != 0 ? ColoresCasilla.Blanco : ColoresCasilla.Negro;
+            ColoresCasilla colorActual = posicionFila % 2 == 0 ? ColoresCasilla.Blanco : ColoresCasilla.Negro;
             for (int posicionColumna = 1; posicionColumna <= 8; posicionColumna++)
             {
                 Casillas.Add(new Casilla((Columnas)posicionColumna, posicionFila, colorActual));
