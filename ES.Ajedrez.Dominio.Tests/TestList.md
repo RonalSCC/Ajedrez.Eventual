@@ -23,7 +23,8 @@ La casilla h1 es blanca.
 En cada fila, los colores se alternan, y también cambian de fila a fila.
 
 
-- [] - Debe ser la casilla del tablero blanca en la posición A1 
+- [x] - Debe ser la casilla del tablero blanca en la posición A1 
+- [] - Si la casilla no existe Debe arrojar ArgumentException 
 - [] - Debe ser la casilla del tablero blanca en la posición A1 y negra en la posición A8
 - [] - Debe ser la casilla del tablero negra en la posición H1
 - [] - Debe ser la casilla del tablero negra en la posición H1 y blanca en la posición H8

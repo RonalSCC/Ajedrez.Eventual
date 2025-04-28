@@ -16,7 +16,11 @@ public class TableroSpecifications : CommandHandlerAsyncTest<CrearJuego, Guid>
         
         Then(new EventosAjedrez.JuegoCreado(_aggregateId));
         And<AjedrezGame>(ajedrez => ajedrez.Id, _aggregateId);
-        And<AjedrezGame>(ajedrez => ajedrez.ObtenerValorCasilla(10, "A")?.Color, "Blanca");
+        var casillasEsperadas = new List<Casilla>()
+        {
+            new Casilla("A", 1, "Blanca"),
+        };
+        And<AjedrezGame>(ajedrez => ajedrez.Casillas, casillasEsperadas);
     }
-    
+
 }
